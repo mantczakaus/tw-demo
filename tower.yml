@@ -1,0 +1,5 @@
+reports:
+    "**/hello.txt":
+        display: hello
+    "**/czesc.txt":
+        display: czesc
