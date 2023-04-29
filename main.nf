@@ -1,9 +1,10 @@
 nextflow.enable.dsl=2
+results_path = $PWD/results
 
 process SAYHELLO {
 
 	debug true
-	publishDir "/scratch/director2172/mantczak/demo/results"
+	publishDir "$results_path/results"
 
 	output:
 	path "hello.txt"
@@ -17,7 +18,7 @@ process SAYHELLO {
 
 process SAYCZESC {
 
-	publishDir "/scratch/director2172/mantczak/demo/results"
+	publishDir "$results_path/results"
 
 	output:
 	path "czesc.txt"
