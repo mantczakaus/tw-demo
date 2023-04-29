@@ -4,7 +4,7 @@ results_path = "$PWD/results"
 process SAYHELLO {
 
 	debug true
-	publishDir "$results_path/results"
+	publishDir "$results_path"
 
 	output:
 	path "hello.txt"
@@ -18,7 +18,7 @@ process SAYHELLO {
 
 process SAYCZESC {
 
-	publishDir "$results_path/results"
+	publishDir "$results_path"
 
 	output:
 	path "czesc.txt"
