@@ -1,5 +1,5 @@
 nextflow.enable.dsl=2
-results_path = $PWD/results
+results_path = "$PWD/results"
 
 process SAYHELLO {
 
